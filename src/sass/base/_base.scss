@@ -1,0 +1,33 @@
+@mixin theme-aware($key, $color) {
+  @each $theme-name, $theme-color in $themes {
+      .theme-#{$theme-name} & {
+          #{$key}: map-get(map-get($themes, $theme-name), $color)
+      }
+  }
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  /* font-size: 10px; */
+    scroll-behavior: smooth;
+  /* font-size: (10/16)*100 = 62.5 */
+  font-size: 62.5%; //1rem = 10px' 10px/16px
+}
+body {
+font-family: 'Montserrat', sans-serif;  /* font-size: 16px; */
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: red;
+  @include theme-aware('background', 'color-background');
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0px;
+    scroll-behavior: smooth;
+  
+}

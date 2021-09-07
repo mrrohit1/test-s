@@ -1,0 +1,239 @@
+
+.card__container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 96%;
+h1{
+    width: 90%;
+  text-align: left;
+  text-transform: capitalize;
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+}
+  &--inner{
+    width: 100%;
+    padding: 5px;
+    display: block;
+    &--card{
+      max-width: 308px;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      // background-color: #0a9e88;
+      margin-left: 10px;
+      transition: all .1s ease;
+
+      h2{
+        @include theme-aware('color', 'color-text');
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    line-height: 1;
+      }
+      p{
+        font-size: 2.5vw;
+        font-weight: 400;
+        @include theme-aware('color', 'color-text');
+            text-align: left;
+            
+            line-height: 0;
+    span{
+    color: rgb(58, 58, 58);
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding-left: 8px;
+    }
+      }
+      
+    
+    &:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  
+    &--date_time{
+      display: flex;
+      align-items: center;
+margin-top: 5px;      
+      img{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+      p{
+      color: #0a9e88;
+        font-weight: bold;
+      }
+    }
+  }
+  }
+	
+}
+
+/* -------------------------------------------------------------- */
+/* SLICK REACT CAROUSEL */
+/* .slick-next,
+.slick-prev */
+/* -------------------------------------------------------------- */
+.next,
+.prev {
+  padding: 14px;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    background-color: #fff;
+    z-index: 99 !important;
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    top: 40%;
+    &:hover{
+    background-color:#fff;
+
+    }
+}
+
+.slick-disabled {
+  background: #dddddd;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-title{
+  flex: 1;
+  margin: 12px;
+  @include theme-aware('color', 'color-text');
+}
+
+.header-arrow{
+  align-self: center;
+}
+
+.hs__arrows {
+  align-self: center;
+}
+
+.hs__arrows .arrow:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTUgOSI+Cgk8cGF0aCBmaWxsPSIjMzMzMzMzIiBkPSJNNy44NjcgOC41NzRsLTcuMjItNy4yMi43MDctLjcwOEw3Ljg2NyA3LjE2IDE0LjA1Ljk4bC43MDYuNzA3Ii8+Cjwvc3ZnPgo=");
+  background-size: contain;
+  // filter: brightness(5);
+  width: 18px;
+  height: 12px;
+  cursor: pointer;
+}
+.hs__arrows .arrow.disabled:before {
+  filter: brightness(2);
+}
+.hs__arrows .arrow.arrow-prev:before {
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
+.hs__arrows .arrow.arrow-next:before {
+  transform: rotate(-90deg);
+}
+
+.hs__item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(100% / 6 - (10px * 2) - (20px / 6));
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  flex-direction: column;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .hs__item {
+    flex-basis: calc(100% / 4 - (10px * 2) - (20px / 4));
+  }
+}
+
+.hs__item__content__wrapper {
+  position: relative;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.hs__item__title {
+  pointer-events: none;
+  display: block;
+  max-width: 80%;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  max-height: 3em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+.disabled{
+  pointer-events: none;
+  filter: brightness(2);
+}
+
+.footer {  
+  position: fixed;  
+  left: 0px;  
+  bottom: 0px;  
+  right: 0px;   
+  width: 100%;  
+  background-color: gray;  
+  color: white;  
+  text-align: center;  
+  padding: 10px;
+  }  
+
+.non-decor{
+  text-decoration: none;
+  color: black;
+}  
+
+.item-image{
+  max-width: 60px;
+  height: auto;
+  margin-right: 15px;
+  align-self: flex-start;
+  position: relative;
+}
+
+.single-item-wrapper{
+  margin-bottom: 8px;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-banner-image{
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
