@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/test-s/static/css/main.8b83dbb3.chunk.css",
+    "main.js": "/test-s/static/js/main.e4a77522.chunk.js",
+    "main.js.map": "/test-s/static/js/main.e4a77522.chunk.js.map",
+    "runtime-main.js": "/test-s/static/js/runtime-main.e245cc13.js",
+    "runtime-main.js.map": "/test-s/static/js/runtime-main.e245cc13.js.map",
+    "static/css/2.e4dad316.chunk.css": "/test-s/static/css/2.e4dad316.chunk.css",
+    "static/js/2.b2800dcc.chunk.js": "/test-s/static/js/2.b2800dcc.chunk.js",
+    "static/js/2.b2800dcc.chunk.js.map": "/test-s/static/js/2.b2800dcc.chunk.js.map",
+    "index.html": "/test-s/index.html",
+    "static/css/2.e4dad316.chunk.css.map": "/test-s/static/css/2.e4dad316.chunk.css.map",
+    "static/css/main.8b83dbb3.chunk.css.map": "/test-s/static/css/main.8b83dbb3.chunk.css.map",
+    "static/js/2.b2800dcc.chunk.js.LICENSE.txt": "/test-s/static/js/2.b2800dcc.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/test-s/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e245cc13.js",
+    "static/css/2.e4dad316.chunk.css",
+    "static/js/2.b2800dcc.chunk.js",
+    "static/css/main.8b83dbb3.chunk.css",
+    "static/js/main.e4a77522.chunk.js"
+  ]
+}
